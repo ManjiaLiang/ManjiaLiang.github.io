@@ -17,37 +17,39 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"manjialiang.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="环境配置安装nodebrew install node  安装gitbrew install git  安装npmbrew install npm  安装hexosudo npm install -g hexo-cli  测试安装情况1234node -vgit --versionnpm -vhexo -v  用Hexo搭建博客在桌面创建一个空文件夹blog文件夹是用来存放博客框架的。  在blo">
+  <meta name="description" content="写在前面写个人博客，对我而言是为了记录值得记录的一切。这个想法已经酝酿很久了。半年前，我访问了舍友的个人博客，看着实在是眼馋。问过之后才知道，他的博客是用Hexo搭的。 时隔多日，我终于去Google了一下：在Mac上，使用Hexo免费搭建个人博客。 做个人博客的初衷是为了记录。至于搭博客这个动作，我当然希望它越简单越好。这篇文章，是我整理出来的，在Mac上从开始配置Hexo到着手写文章之前要做的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="一个博客的诞生">
-<meta property="og:url" content="http://example.com/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="环境配置安装nodebrew install node  安装gitbrew install git  安装npmbrew install npm  安装hexosudo npm install -g hexo-cli  测试安装情况1234node -vgit --versionnpm -vhexo -v  用Hexo搭建博客在桌面创建一个空文件夹blog文件夹是用来存放博客框架的。  在blo">
+<meta property="og:url" content="http://manjialiang.github.io/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/index.html">
+<meta property="og:site_name" content="忱不梁">
+<meta property="og:description" content="写在前面写个人博客，对我而言是为了记录值得记录的一切。这个想法已经酝酿很久了。半年前，我访问了舍友的个人博客，看着实在是眼馋。问过之后才知道，他的博客是用Hexo搭的。 时隔多日，我终于去Google了一下：在Mac上，使用Hexo免费搭建个人博客。 做个人博客的初衷是为了记录。至于搭博客这个动作，我当然希望它越简单越好。这篇文章，是我整理出来的，在Mac上从开始配置Hexo到着手写文章之前要做的">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/huanj_1.png">
-<meta property="og:image" content="http://example.com/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/huanj_2.png">
-<meta property="og:image" content="http://example.com/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/huanj_3.png">
-<meta property="og:image" content="http://example.com/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/huanj_4.png">
-<meta property="og:image" content="http://example.com/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/huanj_5.png">
-<meta property="og:image" content="http://example.com/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/dajian_0.png">
-<meta property="og:image" content="http://example.com/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/dajian_1.png">
-<meta property="og:image" content="http://example.com/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/dajian_2.png">
-<meta property="og:image" content="http://example.com/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/dajian_3.png">
-<meta property="og:image" content="http://example.com/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/bushu_1.png">
-<meta property="og:image" content="http://example.com/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/bushu_2.png">
-<meta property="og:image" content="http://example.com/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/bushu_3.png">
-<meta property="og:image" content="http://example.com/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/bushu_4.png">
-<meta property="og:image" content="http://example.com/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/bushu_5.png">
+<meta property="og:image" content="http://manjialiang.github.io/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/huanj_1.png">
+<meta property="og:image" content="http://manjialiang.github.io/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/huanj_2.png">
+<meta property="og:image" content="http://manjialiang.github.io/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/huanj_3.png">
+<meta property="og:image" content="http://manjialiang.github.io/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/huanj_4.png">
+<meta property="og:image" content="http://manjialiang.github.io/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/huanj_5.png">
+<meta property="og:image" content="http://manjialiang.github.io/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/dajian_0.png">
+<meta property="og:image" content="http://manjialiang.github.io/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/dajian_1.png">
+<meta property="og:image" content="http://manjialiang.github.io/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/dajian_2.png">
+<meta property="og:image" content="http://manjialiang.github.io/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/dajian_3.png">
+<meta property="og:image" content="http://manjialiang.github.io/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/bushu_1.png">
+<meta property="og:image" content="http://manjialiang.github.io/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/bushu_2.png">
+<meta property="og:image" content="http://manjialiang.github.io/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/bushu_3.png">
+<meta property="og:image" content="http://manjialiang.github.io/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/bushu_4.png">
+<meta property="og:image" content="http://manjialiang.github.io/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/bushu_5.png">
+<meta property="og:image" content="http://manjialiang.github.io/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/pic_1.png">
+<meta property="og:image" content="http://manjialiang.github.io/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/pic_2.image">
 <meta property="article:published_time" content="2021-02-22T11:42:27.000Z">
-<meta property="article:modified_time" content="2021-02-23T04:54:40.984Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:modified_time" content="2021-02-23T14:16:18.808Z">
+<meta property="article:author" content="忱不梁">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/huanj_1.png">
+<meta name="twitter:image" content="http://manjialiang.github.io/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/huanj_1.png">
 
-<link rel="canonical" href="http://example.com/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/">
+<link rel="canonical" href="http://manjialiang.github.io/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/">
 
 
 <script id="page-configurations">
@@ -60,7 +62,7 @@
   };
 </script>
 
-  <title>一个博客的诞生 | Hexo</title>
+  <title>一个博客的诞生 | 忱不梁</title>
   
 
 
@@ -111,9 +113,10 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Hexo</h1>
+      <h1 class="site-title">忱不梁</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
+      <p class="site-subtitle" itemprop="description">What tickles you will haunt you</p>
   </div>
 
   <div class="site-nav-right">
@@ -165,16 +168,16 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/">
+    <link itemprop="mainEntityOfPage" href="http://manjialiang.github.io/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
+      <meta itemprop="name" content="忱不梁">
+      <meta itemprop="description" content="忱不梁个人小站">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="忱不梁">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -195,7 +198,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-02-23 12:54:40" itemprop="dateModified" datetime="2021-02-23T12:54:40+08:00">2021-02-23</time>
+                <time title="修改时间：2021-02-23 22:16:18" itemprop="dateModified" datetime="2021-02-23T22:16:18+08:00">2021-02-23</time>
               </span>
 
           
@@ -209,40 +212,82 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><h3 id="安装node"><a href="#安装node" class="headerlink" title="安装node"></a>安装node</h3><p><code>brew install node</code></p>
+        <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>写个人博客，对我而言是为了记录值得记录的一切。这个想法已经酝酿很久了。半年前，我访问了舍友的个人博客，看着实在是眼馋。问过之后才知道，他的博客是用Hexo搭的。</p>
+<p>时隔多日，我终于去Google了一下：<code>在Mac上，使用Hexo免费搭建个人博客</code>。</p>
+<p>做个人博客的初衷是为了记录。至于搭博客这个动作，我当然希望它越简单越好。这篇文章，是我整理出来的，在Mac上从开始配置Hexo到着手写文章之前要做的一切。</p>
+<h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><h3 id="安装node"><a href="#安装node" class="headerlink" title="安装node"></a>安装node</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install node</span><br></pre></td></tr></table></figure>
 <p><img src="/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/huanj_1.png"></p>
-<h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><p><code>brew install git</code></p>
+<h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install git</span><br></pre></td></tr></table></figure>
 <p><img src="/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/huanj_2.png"></p>
-<h3 id="安装npm"><a href="#安装npm" class="headerlink" title="安装npm"></a>安装npm</h3><p><code>brew install npm</code></p>
+<h3 id="安装npm"><a href="#安装npm" class="headerlink" title="安装npm"></a>安装npm</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install npm</span><br></pre></td></tr></table></figure>
 <p><img src="/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/huanj_3.png"></p>
-<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p><code>sudo npm install -g hexo-cli</code></p>
+<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 <p><img src="/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/huanj_4.png"></p>
-<h3 id="测试安装情况"><a href="#测试安装情况" class="headerlink" title="测试安装情况"></a>测试安装情况</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">git --version</span><br><span class="line">npm -v</span><br><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+<h3 id="测试安装情况"><a href="#测试安装情况" class="headerlink" title="测试安装情况"></a>测试安装情况</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">git --version</span><br><span class="line">npm -v</span><br><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
 <p><img src="/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/huanj_5.png"></p>
 <h2 id="用Hexo搭建博客"><a href="#用Hexo搭建博客" class="headerlink" title="用Hexo搭建博客"></a>用Hexo搭建博客</h2><h3 id="在桌面创建一个空文件夹blog"><a href="#在桌面创建一个空文件夹blog" class="headerlink" title="在桌面创建一个空文件夹blog"></a>在桌面创建一个空文件夹<code>blog</code></h3><p>文件夹是用来存放博客框架的。</p>
 <p><img src="/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/dajian_0.png"></p>
-<h3 id="在blog路径下初始化Hexo"><a href="#在blog路径下初始化Hexo" class="headerlink" title="在blog路径下初始化Hexo"></a>在blog路径下初始化Hexo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd Desktop&#x2F;blog</span><br><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+<h3 id="在blog路径下初始化Hexo"><a href="#在blog路径下初始化Hexo" class="headerlink" title="在blog路径下初始化Hexo"></a>在blog路径下初始化Hexo</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd Desktop/blog</span><br><span class="line">hexo init</span><br></pre></td></tr></table></figure>
 <p><img src="/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/dajian_1.png"></p>
-<h3 id="启动hexo"><a href="#启动hexo" class="headerlink" title="启动hexo"></a>启动hexo</h3><p><code>hexo s</code></p>
+<h3 id="启动hexo"><a href="#启动hexo" class="headerlink" title="启动hexo"></a>启动hexo</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 <p><img src="/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/dajian_2.png"></p>
 <p>根据提示，在浏览器中输入<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a><br>至此，博客网页可以在本地运行，可以查看到默认生成了一篇博文<br>查看完毕，可以回到终端，按下ctrl+c，退出命令，返回blog目录</p>
 <p><img src="/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/dajian_3.png"></p>
+<h3 id="更改网站基本信息"><a href="#更改网站基本信息" class="headerlink" title="更改网站基本信息"></a>更改网站基本信息</h3><p>打开blog路径下的<code>_config.yml</code>，照着做就好了。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">忱不梁</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">What</span> <span class="string">tickles</span> <span class="string">you</span> <span class="string">will</span> <span class="string">haunt</span> <span class="string">you</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">忱不梁个人小站</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">忱不梁</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## If your site is put in a subdirectory, set url as &#x27;http://example.com/child&#x27; and root as &#x27;/child/&#x27;</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">http://manjialiang.github.io/</span></span><br></pre></td></tr></table></figure>
 <h2 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h2><p>想要博客网站可以通过互联网访问，需要我们将它部署到远端服务器上。Github Page管理方便、免费、具有无限流量，所以我们选它。</p>
 <h3 id="在Github上新建一个仓库"><a href="#在Github上新建一个仓库" class="headerlink" title="在Github上新建一个仓库"></a>在Github上新建一个仓库</h3><p>登录Github，新建一个仓库New repository，仓库名称必须为：昵称.github.io。</p>
 <p><img src="/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/bushu_1.png"></p>
-<h3 id="在blog路径下安装deployer插件"><a href="#在blog路径下安装deployer插件" class="headerlink" title="在blog路径下安装deployer插件"></a>在blog路径下安装deployer插件</h3><p><code>npm install hexo-deployer-git --save</code></p>
+<h3 id="在blog路径下安装deployer插件"><a href="#在blog路径下安装deployer插件" class="headerlink" title="在blog路径下安装deployer插件"></a>在blog路径下安装deployer插件</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <p><img src="/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/bushu_2.png"></p>
 <h3 id="更改-config-yml的配置"><a href="#更改-config-yml的配置" class="headerlink" title="更改_config.yml的配置"></a>更改<code>_config.yml</code>的配置</h3><p>打开blog路径下的<code>_config.yml</code>，做以下修改，repo的值为Github上repo的地址。</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/ManjiaLiang/ManjiaLiang.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 <p><img src="/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/bushu_3.png"></p>
-<h3 id="部署到远端"><a href="#部署到远端" class="headerlink" title="部署到远端"></a>部署到远端</h3><p><code>hexo d</code></p>
+<h3 id="部署到远端"><a href="#部署到远端" class="headerlink" title="部署到远端"></a>部署到远端</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 <p><img src="/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/bushu_4.png"></p>
 <p>大功告成</p>
 <p><img src="/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/bushu_5.png"></p>
-<h2 id="更换主题，以Next为例"><a href="#更换主题，以Next为例" class="headerlink" title="更换主题，以Next为例"></a>更换主题，以Next为例</h2><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd hexo</span><br><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-theme-next themes&#x2F;next</span><br></pre></td></tr></table></figure>
+<h2 id="更换主题，以Next为例"><a href="#更换主题，以Next为例" class="headerlink" title="更换主题，以Next为例"></a>更换主题，以Next为例</h2><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd hexo</span><br><span class="line">git clone https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
 <h3 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h3><p>打开blog路径下的<code>_config.yml</code>，更改theme值为next</p>
-<p><code>theme: next</code></p>
-<h3 id="调试发布"><a href="#调试发布" class="headerlink" title="调试发布"></a>调试发布</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo server --debug</span><br><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure>
+<h3 id="调试并发布"><a href="#调试并发布" class="headerlink" title="调试并发布"></a>调试并发布</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo server --debug</span><br><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<h2 id="在博客中插入图片"><a href="#在博客中插入图片" class="headerlink" title="在博客中插入图片"></a>在博客中插入图片</h2><p>插入图片一定是写博客的刚需，这个需求的实现偏偏还有点复杂，所以就单独摘出来写一下。</p>
+<h3 id="图片路径"><a href="#图片路径" class="headerlink" title="图片路径"></a>图片路径</h3><p>打开blog路径下的<code>_config.yml</code>，更改一下配置：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>应用该配置后，再使用<code>hexo new</code>命令创建新文章时，会生成与文章名相同的文件夹。通过这种方式管理图片非常方便。例如，在<code>blog/source/_post</code>目录下，博客名为<code>test.md</code>，相应的存在一个<code>test</code>文件夹存放图片<code>image.jpg</code>。</p>
+<blockquote>
+<p>项目会生成新的文件目录，同时会解析Markdown中的图片路径，这会导致一个问题。</p>
+<p>对于Typora编辑器来说，在md文件中使用<code>![](1/image.jpg)</code>能在编辑器中同步预览图片。</p>
+<p>对于hexo来说，使用<code>![](image.jpg)</code>即能在网页上显示图片，但是使用这个格式就没办法在Typora中预览图片。</p>
+<p>但实际上，前面提到的问题是，使用<code>![](image.jpg)</code>插入图片，其既不能在Typora中预览，又不能再网页中显示。</p>
+</blockquote>
+<h3 id="图片插件"><a href="#图片插件" class="headerlink" title="图片插件"></a>图片插件</h3><p>插件<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked</a>解决了这个问题。</p>
+<p>首先，安装插件：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-marked</span><br></pre></td></tr></table></figure>
+<p>为了启用插件，在博客配置文件<code>_config.yml</code>中添加：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">plugins:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">hexo-renderer-marked</span></span><br></pre></td></tr></table></figure>
+<p>将插件的配置参数复制到<code>_config.yml</code>中：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">marked:</span></span><br><span class="line">  <span class="attr">gfm:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">pedantic:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">breaks:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">smartLists:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">smartypants:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">quotes:</span> <span class="string">&#x27;“”‘’&#x27;</span></span><br><span class="line">  <span class="attr">modifyAnchors:</span> <span class="number">0</span></span><br><span class="line">  <span class="attr">anchorAlias:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">autolink:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">mangle:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">sanitizeUrl:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">headerIds:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">lazyload:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">prependRoot:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">postAsset:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">external_link:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">exclude:</span> []</span><br><span class="line">    <span class="attr">nofollow:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">disableNunjucks:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">descriptionLists:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>之后更改以下配置：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">marked:</span></span><br><span class="line">  <span class="attr">prependRoot:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">postAsset:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>之后通过<code>![](image.jpg)</code>插入图片就能够在网页上正常显示了。</p>
+<h3 id="Hexo-×-Typora"><a href="#Hexo-×-Typora" class="headerlink" title="Hexo × Typora"></a>Hexo × Typora</h3><p>最后再设置一下Typora，可以让我们的写作流程更有效率。Typora设置如下：</p>
+<p><img src="/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/pic_1.png"></p>
+<p>使用该配置后，直接复制本地/网页中的图片地址，粘贴到Typora时，会直接复制该图片到与文章名相同的文件夹下，并自动更改路径，此时可以预览markdown文件中的图片。例如，将<code>image.jpg</code>粘贴到(Typora中的)<code>文章名.md</code>，图片会自动变为<code>![](文章名/image.jpg)</code>。</p>
+<p>在博客上传之前，为了让其能在网页上正常显示，在Typora编辑器中，需要使用<code>cmd + F</code>快捷键将<code>文章名/</code>全部替换掉。</p>
+<p><img src="/2021/02/22/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/pic_2.image"></p>
+<p>再上传博客，图片就会随着文章一起打包。在网页中就可以看到正常显示的图片，大功告成。</p>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://www.hansion.win/2020/04/13/hexo-da-jian-ge-ren-bo-ke-mac-windows-coding-github-ma-yun-ge-chong-ping-tai-wan-quan-jie-shao/">Hexo搭建个人博客</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/114195340">GitHub Pages + Hexo免费搭建个人博客_Mac</a></li>
+<li><a target="_blank" rel="noopener" href="https://wolfberrycoke.github.io/2020/08/15/%E8%BF%99%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E7%9A%84%E5%87%BA%E7%94%9F%E8%AF%81%E6%98%8E/">这个博客网站的出生证明</a></li>
+<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6882619951857811469">hexo博客中如何插入图片</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked</a></li>
+<li><a target="_blank" rel="noopener" href="https://tbfungeek.github.io/2016/02/24/hexo-%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6/">Hexo 安装插件</a></li>
+<li><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000012805627">如何更换hexo博客主题</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38219432/answer/328799436">hexo -d 报错如何解决</a></li>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo文档</a></li>
+</ol>
 
     </div>
 
@@ -256,13 +301,6 @@
 
 
         
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2021/02/22/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" rel="prev" title="Hexo搭建个人博客">
-      <i class="fa fa-chevron-left"></i> Hexo搭建个人博客
-    </a></div>
-      <div class="post-nav-item"></div>
-    </div>
       </footer>
     
   </article>
@@ -320,21 +358,21 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85node"><span class="nav-number">1.1.</span> <span class="nav-text">安装node</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85git"><span class="nav-number">1.2.</span> <span class="nav-text">安装git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85npm"><span class="nav-number">1.3.</span> <span class="nav-text">安装npm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85hexo"><span class="nav-number">1.4.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E5%AE%89%E8%A3%85%E6%83%85%E5%86%B5"><span class="nav-number">1.5.</span> <span class="nav-text">测试安装情况</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2"><span class="nav-number">2.</span> <span class="nav-text">用Hexo搭建博客</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%A8%E6%A1%8C%E9%9D%A2%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%A9%BA%E6%96%87%E4%BB%B6%E5%A4%B9blog"><span class="nav-number">2.1.</span> <span class="nav-text">在桌面创建一个空文件夹blog</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%A8blog%E8%B7%AF%E5%BE%84%E4%B8%8B%E5%88%9D%E5%A7%8B%E5%8C%96Hexo"><span class="nav-number">2.2.</span> <span class="nav-text">在blog路径下初始化Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8hexo"><span class="nav-number">2.3.</span> <span class="nav-text">启动hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E5%88%B0Github"><span class="nav-number">3.</span> <span class="nav-text">部署到Github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%A8Github%E4%B8%8A%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E4%BB%93%E5%BA%93"><span class="nav-number">3.1.</span> <span class="nav-text">在Github上新建一个仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%A8blog%E8%B7%AF%E5%BE%84%E4%B8%8B%E5%AE%89%E8%A3%85deployer%E6%8F%92%E4%BB%B6"><span class="nav-number">3.2.</span> <span class="nav-text">在blog路径下安装deployer插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E6%94%B9-config-yml%E7%9A%84%E9%85%8D%E7%BD%AE"><span class="nav-number">3.3.</span> <span class="nav-text">更改_config.yml的配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E5%88%B0%E8%BF%9C%E7%AB%AF"><span class="nav-number">3.4.</span> <span class="nav-text">部署到远端</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98%EF%BC%8C%E4%BB%A5Next%E4%B8%BA%E4%BE%8B"><span class="nav-number">4.</span> <span class="nav-text">更换主题，以Next为例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD"><span class="nav-number">4.1.</span> <span class="nav-text">下载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">4.2.</span> <span class="nav-text">修改配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B0%83%E8%AF%95%E5%8F%91%E5%B8%83"><span class="nav-number">4.3.</span> <span class="nav-text">调试发布</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85node"><span class="nav-number">2.1.</span> <span class="nav-text">安装node</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85git"><span class="nav-number">2.2.</span> <span class="nav-text">安装git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85npm"><span class="nav-number">2.3.</span> <span class="nav-text">安装npm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85hexo"><span class="nav-number">2.4.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E5%AE%89%E8%A3%85%E6%83%85%E5%86%B5"><span class="nav-number">2.5.</span> <span class="nav-text">测试安装情况</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2"><span class="nav-number">3.</span> <span class="nav-text">用Hexo搭建博客</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%A8%E6%A1%8C%E9%9D%A2%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%A9%BA%E6%96%87%E4%BB%B6%E5%A4%B9blog"><span class="nav-number">3.1.</span> <span class="nav-text">在桌面创建一个空文件夹blog</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%A8blog%E8%B7%AF%E5%BE%84%E4%B8%8B%E5%88%9D%E5%A7%8B%E5%8C%96Hexo"><span class="nav-number">3.2.</span> <span class="nav-text">在blog路径下初始化Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8hexo"><span class="nav-number">3.3.</span> <span class="nav-text">启动hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E6%94%B9%E7%BD%91%E7%AB%99%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF"><span class="nav-number">3.4.</span> <span class="nav-text">更改网站基本信息</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E5%88%B0Github"><span class="nav-number">4.</span> <span class="nav-text">部署到Github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%A8Github%E4%B8%8A%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E4%BB%93%E5%BA%93"><span class="nav-number">4.1.</span> <span class="nav-text">在Github上新建一个仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%A8blog%E8%B7%AF%E5%BE%84%E4%B8%8B%E5%AE%89%E8%A3%85deployer%E6%8F%92%E4%BB%B6"><span class="nav-number">4.2.</span> <span class="nav-text">在blog路径下安装deployer插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E6%94%B9-config-yml%E7%9A%84%E9%85%8D%E7%BD%AE"><span class="nav-number">4.3.</span> <span class="nav-text">更改_config.yml的配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E5%88%B0%E8%BF%9C%E7%AB%AF"><span class="nav-number">4.4.</span> <span class="nav-text">部署到远端</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98%EF%BC%8C%E4%BB%A5Next%E4%B8%BA%E4%BE%8B"><span class="nav-number">5.</span> <span class="nav-text">更换主题，以Next为例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD"><span class="nav-number">5.1.</span> <span class="nav-text">下载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">5.2.</span> <span class="nav-text">修改配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B0%83%E8%AF%95%E5%B9%B6%E5%8F%91%E5%B8%83"><span class="nav-number">5.3.</span> <span class="nav-text">调试并发布</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87"><span class="nav-number">6.</span> <span class="nav-text">在博客中插入图片</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84"><span class="nav-number">6.1.</span> <span class="nav-text">图片路径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%BE%E7%89%87%E6%8F%92%E4%BB%B6"><span class="nav-number">6.2.</span> <span class="nav-text">图片插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo-%C3%97-Typora"><span class="nav-number">6.3.</span> <span class="nav-text">Hexo × Typora</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="nav-number">7.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">John Doe</p>
-  <div class="site-description" itemprop="description"></div>
+  <p class="site-author-name" itemprop="name">忱不梁</p>
+  <div class="site-description" itemprop="description">忱不梁个人小站</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -366,7 +404,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">[object Object]</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
