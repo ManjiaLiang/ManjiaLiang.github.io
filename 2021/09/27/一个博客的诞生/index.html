@@ -15,7 +15,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/2021/09/27/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/test.png">
 <meta property="article:published_time" content="2021-09-27T01:39:40.000Z">
-<meta property="article:modified_time" content="2021-10-01T06:52:36.603Z">
+<meta property="article:modified_time" content="2021-10-01T07:14:35.018Z">
 <meta property="article:author" content="梁慢佳">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2021/09/27/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/test.png">
@@ -134,12 +134,20 @@
 </ol>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/ManjiaLiang/ManjiaLiang.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="Hexo-amp-Typora插入图片解决方案"><a href="#Hexo-amp-Typora插入图片解决方案" class="headerlink" title="Hexo &amp; Typora插入图片解决方案"></a>Hexo &amp; Typora插入图片解决方案</h3><img src="/2021/09/27/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/test.png" class="">
+<h3 id="Hexo-amp-Typora插入图片解决方案"><a href="#Hexo-amp-Typora插入图片解决方案" class="headerlink" title="Hexo &amp; Typora插入图片解决方案"></a>Hexo &amp; Typora插入图片解决方案</h3><p>将 <code>config.yml</code> 文件中的 <code>post_asset_folder</code> 选项设为 <code>true</code> 以打开资源文件管理文件夹：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>将资源文件管理模式打开后，Hexo将会在你每一次通过 <code>hexo new [layout] &lt;title&gt;</code> 命令创建新文章时自动创建一个与文章同名的文件夹。该文件夹用于存放于此篇文章有关的资源，此后可以通过相对路径引用它们。</p>
+<p>譬如，此篇文章对应的文件夹叫<code>一个博客的诞生</code>，其内部包含一个名为<code>test.png</code>的图片文件，在md文件中需要嵌入图片位置键入如下代码即可将图片插入。</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset<span class="emphasis">_img test.png %&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>效果如下：</p>
+<img src="/2021/09/27/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/test.png" class="">
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/27/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/" data-id="cku80vd0y0000wjbfazd6cvmm" data-title="一个博客的诞生" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/27/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/" data-id="cku81844u0000i5bffw785bvx" data-title="一个博客的诞生" class="article-share-link">Share</a>
       
       
       
