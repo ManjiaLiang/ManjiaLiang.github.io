@@ -107,18 +107,26 @@
 <h3 id="部署至Github"><a href="#部署至Github" class="headerlink" title="部署至Github"></a>部署至Github</h3><ol>
 <li>创建Github个人<code>token</code></li>
 </ol>
-<p>Git命令行要求使用token，而不能使用密码，因此首先需要创建个人<code>token</code>，流程如下：</p>
+<p>自2021年8月13日起，<a target="_blank" rel="noopener" href="http://git-scm.com/">Git</a>不再支持密码方式验证，而是建议使用<code>token</code>，因此首先需要创建个人<code>token</code>，流程如下：</p>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://github.com/">github.com</a> &gt;&gt;&gt; 头像 &gt;&gt;&gt; Settings &gt;&gt;&gt; Developer settings &gt;&gt;&gt; Personal access tokens &gt;&gt;&gt; Generate new token</li>
 <li>Note : Blog/Expiration : no expiration/Select scopes : repo, admin:repo_hook, delete_repo &gt;&gt;&gt; Generate token</li>
 <li>注：务必第一时间复制并记录下<code>token</code>，因为只有首次生成<code>token</code>时才能看到<code>token</code>信息。</li>
 </ul>
 <ol start="2">
+<li><code>token</code>的使用</li>
+</ol>
+<ul>
+<li>执行<a target="_blank" rel="noopener" href="http://git-scm.com/">Git</a>操作时，在要求输入密码的步骤输入<code>token</code>作为密码</li>
+<li>拼接<code>token</code>和http链接：<code>https://$GH_TOKEN@github.com/ManjiaLiang/ManjiaLiang.github.io.git</code></li>
+<li>将钥匙串中的密码更改为<code>token</code></li>
+</ul>
+<ol start="3">
 <li>安装 <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-deployer-git">hexo-deployer-git</a></li>
 </ol>
 <figure class="highlight zsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
-<ol start="3">
+<ol start="4">
 <li>修改<code>_config.yml</code>配置</li>
 </ol>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/ManjiaLiang/ManjiaLiang.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
@@ -127,7 +135,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/27/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/" data-id="cku2knii70000m1bfcea9ce31" data-title="一个博客的诞生" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/27/%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/" data-id="cku7svkdb0000sjbf5chx3apf" data-title="一个博客的诞生" class="article-share-link">Share</a>
       
       
       
